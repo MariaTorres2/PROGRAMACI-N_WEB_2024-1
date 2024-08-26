@@ -1,0 +1,53 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    height: 80vh;
+    border: 1px solid red;
+    justify-content: stretch;
+ }
+header{
+    
+}
+#todo1{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+#todo2{
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+#todo3{
+    display: flex;
+    flex-direction: row;
+    background-color: azure;
+    height: 80%;
+}
+
+aside{
+    height: 100px;
+    background-color: brown;
+}
+section{
+    height: 70%;
+}
+footer{
+    height: 20%;
+}
+
+ .border{
+    border: 1px solid black;
+    height: 100px;
+    width: 30%;
+ }

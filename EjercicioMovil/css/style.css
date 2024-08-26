@@ -1,0 +1,50 @@
+*{
+    background-color: aqua;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.border{
+    border: 1px solid red;
+}
+
+@media screen and (max-width:480px) {
+    body{
+        height: 100vh;
+        width: 100vh;
+        display: grid;
+        grid-template-rows: 20% 30% 50%;
+        grid-template-columns: 20% 25% 25% 30%;
+        grid-template-areas: 
+        "nav header header "
+        "products products products"
+        "services services services"
+        "footer aside";
+    }   
+}
+
+
+
+nav{
+    grid-area: nav;
+}
+
+header{
+    grid-area: header;
+}
+
+#products{
+    grid-area: products;
+}
+
+#services{
+    grid-area: services;
+}
+
+footer{
+    grid-area: footer;
+}
+
+aside{
+    grid-area: aside;
+}

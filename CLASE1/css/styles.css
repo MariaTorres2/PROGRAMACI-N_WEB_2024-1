@@ -1,0 +1,62 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+body{
+    background-color: rgb(165, 248, 152);
+}
+
+img {
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px black;
+    height: 400px;
+}
+
+p{
+    background-color: green;
+}
+.personal{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#correo{
+    color: red;
+}
+
+#caja{
+    border: solid;
+    margin: 10px;
+    height: 50vh;
+    width: 100vv;
+    border-style: inset;
+}
+
+.cajas{
+    border: solid red;
+    height: 100px;
+    width: 200px;
+    display: inline-block;
+}
+
+#caja2{
+    background-color: aqua;
+    position: absolute;
+}
+
+#menu_ejemplo Li{
+    display: inline;
+    border: solid ;
+    padding: 5px 20px;
+    background-color: rgb(188, 187, 187);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(82, 148, 198);
+    
+}
+.contenedor{
+    height: 100vh;
+    border: solid;
+}

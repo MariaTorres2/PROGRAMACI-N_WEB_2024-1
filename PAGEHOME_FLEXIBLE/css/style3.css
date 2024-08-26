@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedorPrincipal{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 200px;
+    border: 1px solid red;
+}
+
+.contenedorBase{
+    width: 90%;
+    height: 10%;
+  
+}
