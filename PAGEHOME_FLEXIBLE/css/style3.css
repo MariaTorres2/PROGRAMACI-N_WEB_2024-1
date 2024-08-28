@@ -8,6 +8,22 @@
     border: 1px solid blue;
 }
 
+.contenedorBase{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(182, 182, 182);
+    border: 1px solid gray;
+}
+
+
+.contenedorFlex{
+    display: flex;
+    height: auto;
+    background-color: white;
+    border: 1px solid blueviolet;
+}
+
+
 
 @media (min-width: 480px) {
     body{
@@ -24,6 +40,31 @@
     grid-template-columns: 1fr;
     grid-template-rows: 40% 30% 30% 30% 30% ;
     }
+
+    #HeaderInicio{
+        height: 35px;
+        background-color: rgb(147, 176, 240);
+    }
+    
+    #HeaderMedio{
+        height: 63px;
+        background-color: white;
+    }
+    
+    #HeaderFinal{
+        height: 64%;
+    }
+
+    #contentFlexible{
+        grid-area: contentFlexible;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    #anchoFlex{
+        height: 50%;
+        }
     
 }
 
@@ -41,14 +82,43 @@
     grid-template-columns: 50% 40%;
     grid-template-rows: 30% 20% 20% 20% 30%;
     }
+    #HeaderInicio{
+        height: 30px;
+        background-color: rgb(147, 176, 240);
+    }
     
+    #HeaderMedio{
+        height: 50px;
+        background-color: white;
+    }
+    
+    #HeaderFinal{
+        height: 61%;
+    }
+    .contenedorFlex{
+        display: flex;
+        width: 50%;
+        height: auto;
+        background-color: white;
+        border: 1px solid blueviolet;
+    }
+    #contentFlexible{
+        width: 100%;
+        grid-area: contentFlexible;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    #anchoFlex{
+        display: flex;
+        width: 49%;
+        }
 }
 
 @media (min-width: 1900px) {
     body{
         background-color: rgb(247, 238, 165);
         height: 100vh;
-        width: 100vw;
+        width: 99vw;
         display: grid; 
         grid-template-areas: 
      "header header header"
@@ -58,8 +128,30 @@
      "nav nav article"
      "aside aside aside";
      grid-template-columns: 60% 0% 40%;
-     grid-template-rows: 30% 20% 25% 25% 25% 30%;
+     grid-template-rows: 50% 20% 25% 25% 25% 30%;
      }
+     #HeaderInicio{
+        height: 40px;
+        background-color: rgb(147, 176, 240);
+    }
+    
+    #HeaderMedio{
+        height: 110px;
+        background-color: white;
+    }
+    #HeaderFinal{
+        height: 69%;
+    }
+    #contentFlexible{
+        grid-area: contentFlexible;
+        display: flex;
+        flex-direction: row;
+    }
+    #anchoFlex{
+        width: 25%;
+        height: auto;
+        }
+
     }
 
 nav{
@@ -78,4 +170,5 @@ aside{
 }
 #contentFlexible{
     grid-area: contentFlexible;
+    display: flex;
 }
